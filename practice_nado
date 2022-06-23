@@ -1,0 +1,37 @@
+# from random import *
+# list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# shuffle(list)
+# # print(list)
+
+
+# ch = sample(list,1)
+# coffee = sample(list,3)
+
+
+# print("-- 당덤차 발표 --")
+# print(ch)
+# print(coffee)
+# print("-- 축하합니다 --")
+
+
+#나도코딩
+
+from random import *
+users = range(1,21) #1~20명 
+#print(type(users)) users의 형태가 range로 되어있다
+users = list(users)
+#print(type(usesr)) users의 형태를 list로 변환
+
+print(users)
+shuffle(users)
+print(users)
+
+winners = sample(users , 4) #4명을 무작위로 뽑음
+
+
+print("-- 당점차 발표 --")
+print("치킨당첨자 : {0}" .format(winners[0]))
+print("커피당첨자 : {0}" .format(winners[1:]))
+print("-- 축하합니다 --")
+
+
